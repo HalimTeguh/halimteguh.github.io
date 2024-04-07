@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test</title>
     <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="public/css/custom.css" />
   </head>
   <body class="bg-fixed bg-cover bg-center font-sans text-[#070F2B]">
     <!-- Navbar -->
@@ -31,71 +32,381 @@
     </div>
     <!-- End of Navbar -->
 
-    <!-- Footer -->
-    <div class="bg-cover bg-center py-20 px-28 bg-[#9290C3] grid grid-cols-2 ">
+    <!-- Main Content -->
 
-        <div class="text-white" style="">
-          <div class=" mb-10 text-5xl font-bold">
-            Halim's <span class="text-[#070F2B]">Portofolio</span>
-          </div>
-    
-          <div>
-            <table>
-              <tr>
-                <td class="pr-5 py-1">
-                  <img src="icons/email.png'" alt="" class=" w-7">
-                </td>
-                <td class="font-semibold pr-5">Email</td>
-                <td>: halimteguhsaputro@gmail.com</td>
-              </tr>
-    
-              <tr>
-                <td class="pr-5 py-1">
-                  <img src="icons/location.png" alt="" class=" w-7">
-                </td>
-                <td class="font-semibold pr-5">Address</td>
-                <td>: Kota Malang, Jawa Timur</td>
-              </tr>
-    
-              <tr>
-                <td class="pr-5 py-1">
-                  <img src="icons/phone.png" alt="" class=" w-7">
-                </td>
-                <td class="font-semibold pr-5">Phone</td>
-                <td>: +62 812 3344 5566</td>
-              </tr>
-    
-              <tr>
-                <td class="pr-5 py-1">
-                  <a href="https://www.linkedin.com/in/halimteguh/">
-                    <img src="icons/linkedin.png" alt="" class=" w-7">
-                  </a>
-                </td>
-                <td class="font-semibold pr-5">Linkedin</td>
-                <td>
-                  <a href="https://www.linkedin.com/in/halimteguh/">
-    
-                    : halim teguh s
-                  </a>
-                </td>
-              </tr>
-            </table>
-          </div>
+    <!-- Section 1 - Hero -->
+    <div
+      class="py-52 bg-cover bg-center flex relative items-center justify-center"
+      style="
+        background-image: url('public/images/bg.png');
+        background-size: cover;
+        box-shadow: 0px 32px 25px -22px rgba(155, 155, 155, 1) inset;
+      "
+    >
+      <div class="text-5xl w-full px-48 text-center font-bold">
+        <div class="pr-36">
+          with <span class="text-8xl text-[#535C91]">Code</span><br />
         </div>
-    
-        <div class="flex justify-center text-center items-center text-sm text-white">
-          <ul>
-            <li class="py-2 font-bold text-base"><a href="">Home</a></li>
-            <li class="py-2 opacity-70 hover:opacity-100 hover:text-base ease-out duration-300"><a href="">About</a></li>
-            <li class="py-2 opacity-70 hover:opacity-100 hover:text-base ease-out duration-300"><a href="">MyProject</a>
-            </li>
-            <li class="py-2 opacity-70 hover:opacity-100 hover:text-base ease-out duration-300"><a href="">Contact</a></li>
-          </ul>
-    
+        <div class="pl-36">
+          <span class="align-top">we</span>
+          <span class="align-top text-8xl text-[#535C91]">Trust</span>
         </div>
-    
+
+        <div class="flex justify-center mt-10">
+          <div
+            id="divider"
+            class="border-t-4 border-[#535C91]"
+            style="width: 650px"
+          ></div>
+        </div>
+
+        <div class="my-10 text-base font-normal">
+          <span class="italic"
+            >"<b>The best</b> road to progress is <b>freedom's road</b>"</span
+          >. - John F Kennedy<br />
+          Jadikan kebebasan menjadi kenyataan
+        </div>
+        <a href="#">
+          <div
+            class="m-auto w-64 py-2 bg-[#535C91] rounded-full text-white text-base hover:text-lg hover:bg-[#757DA7] ease-out duration-300"
+          >
+            Go to portfolio
+          </div>
+        </a>
       </div>
+    </div>
+    <!-- End of Section 1 -->
+
+    <!-- Section 2 - CTA -->
+    <div class="bg-cover bg-center bg-[#9290C3] flex">
+      <div class="flex-shrink-0" style="width: 800px">
+        <img src="public/images/profile.png" alt="" />
+      </div>
+
+      <div class="mx-40 flex flex-col justify-center text-white">
+        <p class="text-2xl">Hello, I'm</p>
+        <h1 class="text-5xl font-bold">Halim Teguh Saputro</h1>
+
+        <p class="mt-5 text-lg">
+          Ungraduate Student of System Information Business at Polytechnic State
+          of Malang. I am interested in the world of technology such as
+          <b>website</b> and <b>mobile application development</b>. I like to
+          learn new and interesting things.
+        </p>
+
+        <div class="mt-16">
+          <div class="flex mx-2">
+            <p
+              class="tab-links active-link text-base"
+              onclick="opentab('experience')"
+            >
+              Experience
+            </p>
+            <p class="tab-links text-base" onclick="opentab('skill')">
+              Skill & Certification
+            </p>
+            <p class="tab-links text-base" onclick="opentab('organization')">
+              Organization
+            </p>
+          </div>
+        </div>
+
+        <div
+          id="experience"
+          class="tab-contents active-content mt-6 px-5 pt-2 pb-5 bg-[#535C91] rounded-xl"
+        >
+          <div>
+            <h1 class="font-bold text-lg py-1">UKM Pendidikan dan Penalaran</h1>
+            <p class="text-base leading-4">
+              Head of Social Media Sub Division <br />
+              <span class="italic">(Jan 2023 - Feb 2024)</span>
+            </p>
+          </div>
+
+          <div class="pb-4"></div>
+
+          <div>
+            <h1 class="font-bold text-lg py-1">Semudahitu.id</h1>
+            <p class="text-base leading-4">
+              Freelance Software Developer <br />
+              <span class="italic">(Oct 2023 - Jan 2024)</span>
+            </p>
+          </div>
+        </div>
+
+        <div
+          id="skill"
+          class="tab-contents mt-6 px-5 pt-2 pb-5 bg-[#535C91] rounded-xl"
+        >
+          <div>
+            <h1 class="font-bold text-lg py-1">Certification (2023)</h1>
+            <p class="text-base leading-4 mb-2">
+              Laravel Web Development by SanberCode
+            </p>
+            <p class="text-base leading-4 mb-2">
+              Junior Web Developer by Vocational School Graduate Academy Digital
+              Talent Scholarship Kominfo
+            </p>
+          </div>
+
+          <div>
+            <h1 class="font-bold text-lg py-1">Hard Skills</h1>
+            <div class="flex">
+              <img src="public/icons/HTML.png" alt="" class="w-8 mx-1" />
+              <img src="public/icons/CSS.png" alt="" class="w-8 mx-1" />
+              <img src="public/icons/Javascript.png" alt="" class="w-8 mx-1" />
+              <img src="public/icons/PHP.png" alt="" class="w-8 mx-1" />
+              <img src="public/icons/Dart.png" alt="" class="w-8 mx-1" />
+
+              <img src="public/icons/CodeIgniter.png" alt="" class="w-8 mx-1" />
+              <img src="public/icons/Laravel.png" alt="" class="w-8 mx-1" />
+              <img src="public/icons/Sveltekit.png" alt="" class="w-8 mx-1" />
+              <img src="public/icons/Flutter.png" alt="" class="w-8 mx-1" />
+
+              <img src="public/icons/Figma.png" alt="" class="w-8 mx-1" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="organization"
+          class="tab-contents mt-6 px-5 pt-2 pb-5 bg-[#535C91] rounded-xl"
+        >
+          <div>
+            <h1 class="font-bold text-lg py-1">UKM Pendidikan dan Penalaran</h1>
+            <p class="text-base leading-4 mb-2">
+              Head of Social Media Sub Division <br />
+              <span class="italic">(Jan 2023 - Feb 2024)</span>
+            </p>
+            <p class="text-base leading-4 mb-2">
+              Chief Executive of “Penelitian Ilmiah” <br />
+              <span class="italic">(Jan 2022 - Okt 2022)</span>
+            </p>
+            <p class="text-base leading-4 mb-2">
+              Panitia Operator <br />
+              <span class="italic">(in some event)</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Section 2 -->
+
+    <!-- Section 3 - Exhibition Project -->
+    <div
+      class="bg-cover p-14 bg-center bg-fixed justify-center"
+      style="
+        background-image: url('public/images/bg.png');
+        background-size: cover;
+      "
+    >
+      <div class="text-5xl w-full text-center font-bold">
+        Check this <span class="text-[#535C91]">out</span>!
+      </div>
+      <div class="py-3 text-xl w-full text-center">
+        My <span class="font-semibold text-[#535C91]">lovely project</span> now,
+        and feel the <span class="font-semibold text-[#535C91]">freedom</span>.
+      </div>
+
+      <div class="mx-16 grid grid-cols-3 relative items-center justify-center">
+        <!-- Card Project -->
+        <div
+          class="m-5 px-5 border-4 rounded-xl border-[#535C91] bg-white hover:drop-shadow-[13px_10px_8.5px_rgba(0,0,0,0.35)] ease-out duration-300"
+        >
+          <div class="font-bold text-lg text-center py-5">Kategori Project</div>
+
+          <div>
+            <img class="" src="public/images/preview_project.png" alt="" />
+          </div>
+
+          <div class="font-bold text-lg text-center pt-5 pb-3">
+            Nama Project
+          </div>
+
+          <div class="mx-10 border-t-4 border-[#535C91] rounded"></div>
+
+          <div class="m-5 px-2 text-md text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+            doloribus nisi voluptatum. Alias modi molestiae architecto saepe
+            quae atque, nam tenetur magni molestias aspernatur labore quis iure
+            necessitatibus animi ab.
+          </div>
+
+          <div class="mb-10 flex justify-center">
+            <a
+              class="bg-[#535C91] py-2 px-14 rounded-lg text-sm text-white hover:bg-[#757DA7] hover:font-bold ease-out duration-150"
+              href=""
+              >Lihat Sekarang</a
+            >
+          </div>
+        </div>
+        <!-- End of Card Project -->
+
+        <!-- Card Project -->
+        <div
+          class="m-5 px-5 border-4 rounded-xl border-[#535C91] bg-white hover:drop-shadow-[13px_10px_8.5px_rgba(0,0,0,0.35)] ease-out duration-300"
+        >
+          <div class="font-bold text-lg text-center py-5">Kategori Project</div>
+
+          <div>
+            <img class="" src="public/images/preview_project.png" alt="" />
+          </div>
+
+          <div class="font-bold text-lg text-center pt-5 pb-3">
+            Nama Project
+          </div>
+
+          <div class="mx-10 border-t-4 border-[#535C91] rounded"></div>
+
+          <div class="m-5 px-2 text-md text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+            doloribus nisi voluptatum. Alias modi molestiae architecto saepe
+            quae atque, nam tenetur magni molestias aspernatur labore quis iure
+            necessitatibus animi ab.
+          </div>
+
+          <div class="mb-10 flex justify-center">
+            <a
+              class="bg-[#535C91] py-2 px-14 rounded-lg text-sm text-white hover:bg-[#757DA7] hover:font-bold ease-out duration-150"
+              href=""
+              >Lihat Sekarang</a
+            >
+          </div>
+        </div>
+        <!-- End of Card Project -->
+
+        <!-- Card Project -->
+        <div
+          class="m-5 px-5 border-4 rounded-xl border-[#535C91] bg-white hover:drop-shadow-[13px_10px_8.5px_rgba(0,0,0,0.35)] ease-out duration-300"
+        >
+          <div class="font-bold text-lg text-center py-5">Kategori Project</div>
+
+          <div>
+            <img class="" src="public/images/preview_project.png" alt="" />
+          </div>
+
+          <div class="font-bold text-lg text-center pt-5 pb-3">
+            Nama Project
+          </div>
+
+          <div class="mx-10 border-t-4 border-[#535C91] rounded"></div>
+
+          <div class="m-5 px-2 text-md text-center">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+            doloribus nisi voluptatum. Alias modi molestiae architecto saepe
+            quae atque, nam tenetur magni molestias aspernatur labore quis iure
+            necessitatibus animi ab.
+          </div>
+
+          <div class="mb-10 flex justify-center">
+            <a
+              class="bg-[#535C91] py-2 px-14 rounded-lg text-sm text-white hover:bg-[#757DA7] hover:font-bold ease-out duration-150"
+              href=""
+              >Lihat Sekarang</a
+            >
+          </div>
+        </div>
+        <!-- End of Card Project -->
+      </div>
+    </div>
+    <!-- End of Section 3 -->
+    <!-- End of Main Content -->
+
+    <!-- Footer -->
+    <div class="bg-cover bg-center py-20 px-28 bg-[#9290C3] grid grid-cols-2">
+      <div class="text-white">
+        <div class="mb-10 text-5xl font-bold">
+          Halim's <span class="text-[#070F2B]">Portofolio</span>
+        </div>
+
+        <div>
+          <table>
+            <tr>
+              <td class="pr-5 py-1">
+                <img src="public/icons/email.png" alt="" class="w-7" />
+              </td>
+              <td class="font-semibold pr-5">Email</td>
+              <td>: halimteguhsaputro@gmail.com</td>
+            </tr>
+
+            <tr>
+              <td class="pr-5 py-1">
+                <img src="public/icons/location.png" alt="" class="w-7" />
+              </td>
+              <td class="font-semibold pr-5">Address</td>
+              <td>: Kota Malang, Jawa Timur</td>
+            </tr>
+
+            <tr>
+              <td class="pr-5 py-1">
+                <img src="public/icons/phone.png" alt="" class="w-7" />
+              </td>
+              <td class="font-semibold pr-5">Phone</td>
+              <td>: +62 812 3344 5566</td>
+            </tr>
+
+            <tr>
+              <td class="pr-5 py-1">
+                <a href="https://www.linkedin.com/in/halimteguh/">
+                  <img src="public/icons/linkedin.png" alt="" class="w-7" />
+                </a>
+              </td>
+              <td class="font-semibold pr-5">Linkedin</td>
+              <td>
+                <a href="https://www.linkedin.com/in/halimteguh/">
+                  : halim teguh s
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div
+        class="flex justify-center text-center items-center text-sm text-white"
+      >
+        <ul>
+          <li class="py-2 font-bold text-base"><a href="">Home</a></li>
+          <li
+            class="py-2 opacity-70 hover:opacity-100 hover:text-base ease-out duration-300"
+          >
+            <a href="">About</a>
+          </li>
+          <li
+            class="py-2 opacity-70 hover:opacity-100 hover:text-base ease-out duration-300"
+          >
+            <a href="">MyProject</a>
+          </li>
+          <li
+            class="py-2 opacity-70 hover:opacity-100 hover:text-base ease-out duration-300"
+          >
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- End of Footer -->
 
+    <script>
+
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-contents");
+
+
+      function opentab(tabName) {
+        // Menghapus kelas 'active-link' dari semua tab links
+        for(let link of tablinks){
+          link.classList.remove('active-link');
+        }
+        
+        // Menghapus kelas 'active-content' dari semua tab contents
+        for(let content of tabcontents){
+          content.classList.remove('active-content');
+        }
+
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabName).classList.add('active-content');
+      }
+    </script>
   </body>
 </html>
